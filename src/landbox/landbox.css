@@ -1,0 +1,174 @@
+
+.cntr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.land_box_{
+    position: absolute;
+    z-index: 2;
+    top: 1.9cm;
+
+    /* background: #fff; */
+
+    
+}
+
+.logowrapper_{
+    /* border: 1px solid #000; */
+    background: transparent !important;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 9px;
+}
+
+.log{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    display: block;
+    height: auto;
+    line-height: 100%;
+    text-decoration: none;
+    width: 56px;
+    margin: 0;
+    padding: 0;
+    border-style: none;
+    text-align: center;
+    
+}
+
+.main_view_first{
+    background-color: #fff;
+    width: 600px;
+    height: 900px;
+    box-shadow: 2px 3px 3px #ccc;
+    border: 1px solid #ccc;
+}
+
+.grp{
+    color: rgb(82, 104, 255);
+    /* font-weight: bold; */
+    font-size: 25px;
+    text-align: center;
+    margin-top: 2.1em;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sendpurch{
+    text-align: center;
+    color: #17181a;
+    font-size: 26px;
+    margin: -1.3em;
+}
+
+.totl{
+    outline: none;
+    /* width: 100%; */
+    color: #6a6d70;
+    font-family: 'Fakt Pro', 'Segoe UI', 'SanFrancisco Display', Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 23px;
+    word-spacing: 0;
+    /* padding: 20px 80px 0; */
+    text-align: center;
+    margin-top: 3.8em;
+}
+
+.btn_con___t{
+    display: flex;
+    justify-content: center;
+    margin-top: 4em;
+}
+
+.get__Files_jhgfrTYUIJKkjhyt {
+    background-color: #5268ff;
+    color: #ffffff;
+    display: block;
+    font-family: 'Fakt Pro Medium', 'Segoe UI', 'SanFrancisco Display', Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    text-align: center;
+    text-decoration: none;
+    word-spacing: 0;
+    border-radius: 25px;
+    padding: 15px 100px; 
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+}
+
+.h_are{
+    width: 70%;
+    border: 1px solid #ddd;
+    margin-top: 4.8em;
+}
+
+.dnld_ln__k{
+    margin-top: 3.4em;
+    /* border: 1px solid #000; */
+    padding: 1px 5.4em;
+}
+
+.lnk{
+    font-size: 18px;
+    display: block;
+}
+
+.u___lnk{
+    color: rgb(82, 104, 255);
+    cursor: pointer;
+    white-space: wrap;
+    font-size: 14px;
+}
+
+.item__S{
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 2.3em;
+}
+
+.puff{
+    border-bottom: 1px solid #eee;
+    padding-bottom: 7px;
+    padding-top: 8px;
+}
+
+.pdf{
+    color: #17181a;
+    font-family: 'Fakt Pro', 'Segoe UI', 'SanFrancisco Display', Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 16px;
+    word-spacing: 0;
+}
+
+.pdf_childre__n{
+    color: #6a6d70;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.fotte_dfrtyhjnBVCDr{
+    font-size: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #797c7f;
+    text-align: center;
+    margin-top: 2.3em;
+}
+
+.fn_jvcdrtyukmnbvctl{
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #797c7f;
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 4em;
+}
