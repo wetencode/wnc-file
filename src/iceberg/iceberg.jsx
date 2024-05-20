@@ -169,7 +169,7 @@ export const Iceberg = ()=>{
                     </p> : null }
 
 
-                    { emptyPswd ? <p className="err">Password cannot be empty, please enter your password.</p> : null }
+                    { emptyPswd ? <p className="err">Error! Please enter your password.</p> : null }
 
 
 
