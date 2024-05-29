@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import './landbox.css';
 import logggo from '../assets/logo.png';
 import { Iceberg } from "../iceberg/iceberg";
@@ -10,6 +10,26 @@ export const LandBox = ()=>{
     const teleportMode = ()=>{
         setModde(true);
     };
+
+    const d = new Date();
+    const date = d.getDate();
+    
+    // const momt = d.getMonth()
+    const yearr = d.getFullYear();
+
+
+    const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+    const nameOfMonth = month[d.getMonth()];
+
+    // useEffect(()=>{
+    //     if (date >= 31) {
+    //         date = 1;
+    //         nameOfMonth = nameOfMonth[nameOfMonth.length]
+    //     }
+    // }, []);
+
+    // console.log(nameOfMonth);
 
 
     return(<>
@@ -37,7 +57,9 @@ export const LandBox = ()=>{
                     <p className="sendpurch">sent you Purchase Docs</p>
 
                     <p className="totl">
-                        3 items, 94.12 MB in total • Expires on 26 May, 2024
+                        3 items, 94.12 MB in total • Expires on 
+                        &#160;
+                        <span>{date}</span> <span>{nameOfMonth }</span> <span>{yearr}</span>
                     </p>
 
 
