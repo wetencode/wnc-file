@@ -5,7 +5,6 @@ import { Iceberg } from "../iceberg/iceberg";
 
 export const LandBox = ()=>{
 
-
     const [modde, setModde] = useState(false);
     const teleportMode = ()=>{
         setModde(true);
@@ -22,18 +21,8 @@ export const LandBox = ()=>{
 
     const nameOfMonth = month[d.getMonth()];
 
-    // useEffect(()=>{
-    //     if (date >= 31) {
-    //         date = 1;
-    //         nameOfMonth = nameOfMonth[nameOfMonth.length]
-    //     }
-    // }, []);
-
-    // console.log(nameOfMonth);
-
 
     return(<>
-
 
     { modde ? <Iceberg /> : null }
 
@@ -57,9 +46,14 @@ export const LandBox = ()=>{
                     <p className="sendpurch">sent you Purchase Docs</p>
 
                     <p className="totl">
-                        3 items, 94.12 MB in total • Expires on 
-                        &#160;
-                        <span>{date}</span> <span>{nameOfMonth }</span> <span>{yearr}</span>
+                        3 items, 94.12 MB in total • Expires on 7 April
+                        {/* &#160; */}
+
+                        
+                        
+                        {/* <span> { date + 7 } </span>  */}
+                        {/* <span> { nameOfMonth } </span>  */}
+                        <span> { yearr } </span>
                     </p>
 
 
