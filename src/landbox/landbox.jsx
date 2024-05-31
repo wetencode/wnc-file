@@ -46,7 +46,7 @@ export const LandBox = ()=>{
                     <p className="sendpurch">sent you Purchase Docs</p>
 
                     <p className="totl">
-                        3 items, 94.12 MB in total • Expires on 7 April
+                        3 items, 94.12 MB in total • Expires on 7 June
                         {/* &#160; */}
 
                         
