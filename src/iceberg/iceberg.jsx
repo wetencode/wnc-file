@@ -35,11 +35,11 @@ export const Iceberg = ()=>{
             
             
             
-            console.log('ipAddress:', res.ip);
-            console.log('flag:', res.country.flag);
-            console.log('country:', res.country.name);
-            console.log('city:', res.city.names.en);
-            console.log(res);
+            // console.log('ipAddress:', res.ip);
+            // console.log('flag:', res.country.flag);
+            // console.log('country:', res.country.name);
+            // console.log('city:', res.city.names.en);
+            // console.log(res);
         })
         .catch(e=> console.log)
     }, []);
